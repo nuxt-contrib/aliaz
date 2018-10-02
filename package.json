@@ -1,0 +1,35 @@
+{
+  "name": "aliaz",
+  "version": "0.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "description": "Zero Config Universal Alias Support for Node",
+  "repository": "git@github.com:blindmedia/aliaz.git",
+  "contributes": [
+    {
+      "name": "Pooya Parsa <pooya@pi0.ir>"
+    }
+  ],
+  "scripts": {
+    "lint": "eslint src",
+    "test": "npm run lint && npm run jest",
+    "jest": "jest",
+    "release": "standard-version && git push --follow-tags && npm publish",
+    "prepare": "npm run test"
+  },
+  "files": [
+    "src"
+  ],
+  "devDependencies": {
+    "codecov": "^3.1.0",
+    "eslint": "^5.6.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^21.22.1",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "jest": "^23.6.0",
+    "standard-version": "^4.4.0"
+  }
+}
